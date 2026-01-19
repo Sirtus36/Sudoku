@@ -1,0 +1,59 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <script src="sudoku.js"></script>
+</head>
+
+<body>
+
+<h1>Sudoku</h1>
+<hr>
+
+
+<div id="menu">
+    <button onclick="showGame('4')">4×4</button>
+    <button onclick="showGame('9')">9×9</button>
+    <button onclick="showGame('16')">16×16</button>
+</div>
+
+
+<div id="difficulty">
+    <button onclick="setDifficulty('easy')">Easy</button>
+    <button onclick="setDifficulty('medium')">Medium</button>
+    <button onclick="setDifficulty('hard')">Hard</button>
+    <button onclick="showSolution()">Show Solution</button>
+</div>
+
+
+<div id="game4" class="game">
+    <h2>4×4 Sudoku</h2>
+    <h2 id="errors4">0</h2>
+    <div id="board4"></div>
+    <br>
+    <div id="digits4"></div>
+</div>
+
+
+<div id="game9" class="game">
+    <h2>9×9 Sudoku</h2>
+    <h2 id="errors9">0</h2>
+    <div id="board9"></div>
+    <br>
+    <div id="digits9"></div>
+</div>
+
+
+<div id="game16" class="game">
+    <h2>16×16 Sudoku</h2>
+    <h2 id="errors16">0</h2>
+    <div id="board16"></div>
+    <br>
+    <div id="digits16"></div>
+</div>
+
+</body>
+</html>

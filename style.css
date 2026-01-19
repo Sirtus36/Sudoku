@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#menu button, #difficulty button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.game {
+    display: none;
+}
+
+
+#board4, #board9, #board16 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.tile {
+    border: 1px solid lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-start {
+    background-color: whitesmoke;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.number-selected {
+    background-color: gray;
+}
+
+
+#board4 {
+    width: 200px;
+    height: 200px;
+}
+
+
+#board4 .tile {
+    width: 48px;
+    height: 48px;
+}
+
+
+#digits4 {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#board9 {
+    width: 450px;
+    height: 450px;
+}
+
+
+#board9 .tile {
+    width: 48px;
+    height: 48px;
+}
+
+
+#digits9 {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#board16 {
+    width: 800px;
+    height: 800px;
+}
+
+
+#board16 .tile {
+    width: 48px;
+    height: 48px;
+}
+
+
+#digits16 {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#errors4, #errors9, #errors16 {
+    color: red;
+}
